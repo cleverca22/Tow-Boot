@@ -99,6 +99,8 @@ stdenv.mkDerivation ({
 
     # Intrusive opinionated patches
     ./patches/0001-Tow-Boot-sunxi-ignore-mmc_auto-force-SD-then-eMMC.patch
+
+    ./patches/xhci-fix.patch
   ] ++ patches;
 
   postPatch = ''
